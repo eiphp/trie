@@ -46,7 +46,7 @@ type Engine struct {
 	notFound Handler
 }
 
-func NewEngine() *Engine {
+func New() *Engine {
 	return &Engine{
 		Router: Router{
 			trees: make(map[string]*Tree),
